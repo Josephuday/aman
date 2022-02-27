@@ -1,0 +1,48 @@
+# include <isostream>
+include <iomanip>
+
+using namespace std;
+
++class Time
+{
+private:
+int seconds;
+int hh,mm,ss;
+public:
+void getTime (vold);
+void convertIntoSeconds (void);
+void displayTine (void);
+};
+
+void Time: :getTime (void)
+{
+cout<< "Enter time:"<< endl;
+cout <<"Hours?   ";         cin >>hh;
+cout <<"Minutes? ";         cin>>mm;
+cOut <<"Seconds?";          cin >>ss;
+};
+
+vold Time: : convertIntoSeconds (void)
+{
+       seconds=hh*3600+mm*60+ss;
+ }      
+     
+ void Time::displayTime (void)
+ {
+   cout << "The time is = " << setw(2) << setfill('0') << hh <<":"
+                            << setw(2) << setfill('0') << mm <<":"
+                            << setw(2) << setfill('0') << ss << end1;
+     cout << "time in total seconds:" << seconds;
+  }
+  
+  int main()
+  {
+      Time T;//creating objects
+      
+      T.getTime();
+      T.convertIntoseconds();
+      T.displayTime();
+      
+      return 0;
+                            
+ 
